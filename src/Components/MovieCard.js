@@ -1,10 +1,12 @@
 import React from 'react'
 import {Card, Button} from 'react-bootstrap'
-
+import {Link  }  from "react-router-dom";
 import '../App.css';
 import MovieRatingStar from '../RatingStar';
 
- const MovieCard = ({ movies }) => {
+const MovieCard = ({ movies }) => {
+    
+    
     return (
         <div >
             <Card className="movieCard" style={{ width: '18rem' }}>
@@ -17,7 +19,8 @@ import MovieRatingStar from '../RatingStar';
                     <div className='starRating' >
                     <MovieRatingStar isMovieRating={true} movieRating= {movies.rating}/>
                     </div>
-                    <Button variant="dark">Watch</Button>
+                    <Link to={`/description/${movies.id}`}><Button variant="dark">Watch</Button></Link>
+                    
                 </Card.Body>
             </Card>
         </div>

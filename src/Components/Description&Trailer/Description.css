@@ -1,0 +1,9 @@
+.DISC-BTNS{
+  justify-content: center;
+  display: flex;
+}
+
+.GoBack-BTN{
+  margin-right: 10px;
+}
+

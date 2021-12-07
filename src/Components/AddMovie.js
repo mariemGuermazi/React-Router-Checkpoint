@@ -68,7 +68,7 @@ const handleMovie = () => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick= {handleMovie}>
+          <Button variant="dark" onClick= {handleMovie}>
             Save
           </Button>
         </Modal.Footer>
